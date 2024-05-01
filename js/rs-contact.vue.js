@@ -10,7 +10,7 @@ var contactComponentRs = {
 	created() {	
 		this.$root.showLoader();	
 	
-		axios.get('../md/rs/contact.md')
+		axios.get(this.$root.repo + '/md/rs/contact.md')
 		.then((response) => {
 			this.$root.hideLoader();
 			this.html = markdown.render(response.data);

@@ -10,7 +10,7 @@ var homeComponentRs = {
 	created() {	
 		this.$root.showLoader();	
 	
-		axios.get('../md/rs/home.md')
+		axios.get(this.$root.repo + '/md/rs/home.md')
 		.then((response) => {
 			this.$root.hideLoader();
 			this.html = markdown.render(response.data);
