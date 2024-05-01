@@ -1,0 +1,80 @@
+const routes = [
+	{ name: 'root', path: '', redirect: '/en/home' },
+	{ name: 'home', path: '/en/home',  component: homeComponent, }, 
+	{ name: 'service', path: '/en/service',  component: serviceComponent, }, 
+	{ name: 'about-me', path: '/en/about-me',  component: aboutMeComponent, },	
+	{ name: 'contact', path: '/en/contact',  component: contactComponent, },
+	{ name: 'rs-home', path: '/rs/home',  component: homeComponentRs, }, 
+	{ name: 'rs-service', path: '/rs/service',  component: serviceComponentRs, }, 
+	{ name: 'rs-about-me', path: '/rs/about-me',  component: aboutMeComponentRs, },	
+	{ name: 'rs-contact', path: '/rs/contact',  component: contactComponentRs, },	
+	{ name: '404', path: '/:pathMatch(.*)*', component: pageNotFoundComponent },
+];
+
+const router = VueRouter.createRouter({
+	  history: VueRouter.createWebHashHistory(),
+	  routes,
+});
+
+router.afterEach((to, from) => {
+  var elems = document.querySelectorAll('.sidenav');
+  if(elems[0] !== "undefined") {
+	var instance = M.Sidenav.getInstance(elems[0]);
+	if(typeof instance != "undefined") {
+		instance.close();
+	}
+  }
+});
+
+const markdown = markdownit({
+  html: false,
+  linkify: true,
+  typographer: false
+}).use(window.markdownitContainer, 'center-align')
+.use(window.markdownitContainer, 'card-panel');
+
+
+const app = Vue.createApp({
+	data() { 
+		return {
+		    isLoading: 0,
+			language: 'en',
+		}
+	},
+	created() {
+	
+	},
+	mounted() {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems, {
+		  // specify options here
+		});	
+	},
+	methods: {
+	    showLoader() {
+	    	this.isLoading += 1;
+	    },
+	   	hideLoader() {
+	    	if(this.isLoading > 0) {
+	    		this.isLoading -= 1;
+	    	}
+	    },
+		checkLanguage() {
+			let language = /\/en\//.exec(window.location.href);
+			if(language != null) {
+				this.language = 'en';
+			} else {
+				this.language = 'sr';
+			}				
+		},
+		render(html) {
+			return html.replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>')
+		},
+	},	
+});
+
+app.use(router);
+
+app.mount('#app');
+
+

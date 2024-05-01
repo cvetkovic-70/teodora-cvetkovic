@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Theodora Cvetković</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+		<meta name="description" content="Theodora Cvetkovic" />
+		<meta name="keywords" content=""/>
+		<meta name="pragma" content="no-cache" />
+		<meta name="cache-control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0, proxy-revalidate" />
+		<meta name="robots" content="index, follow"/>	
+		<link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+		<link type="text/css" rel="stylesheet" href="./css/materialize.min.css" />
+		<link type="text/css" rel="stylesheet" href="./css/flag-icons.min.css" />
+		<link type="text/css" rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container center-align"></div>
+		</header>
+		<main>
+			<div id="app">
+				<div class="container" v-bind:lang="language">
+					<div class="progress" v-if="isLoading">
+						  <div class="indeterminate"></div>
+					</div>
+					
+					<div class="fixed-action-btn x-fixed-action-btn">
+						<a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn-large btn-floating">
+							<i class="material-icons x-menu">menu</i>
+						</a>
+					</div>
+					
+					<ul id="slide-out" class="sidenav">
+						<li>
+							<div class="x-sidenav-close">
+								<a class="sidenav-close" href="javascript:void(0);">
+									<span class="material-icons">close</span>
+								</a>
+							</div>
+						</li>
+						<li><div class="divider"></div></li>
+						<template v-if="language == 'en'">
+							<li><router-link to="/en/home">Home</router-link></li>
+							<li><router-link to="/en/about-me">About Me</router-link></li>
+							<li><router-link to="/en/service">Service</router-link></li>
+							<li><router-link to="/en/contact">Contact</router-link></li>
+						</template>
+						<template v-else>
+							<li><router-link to="/rs/home">Home</router-link></li>
+							<li><router-link to="/rs/about-me">O meni</router-link></li>
+							<li><router-link to="/rs/service">Usluge</router-link></li>
+							<li><router-link to="/rs/contact">Kontakt</router-link></li>				
+						</template>
+						<li><div class="divider"></div></li>
+						<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
+						<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>
+					</ul>
+					
+					<router-view></router-view>
+				</div>	
+			</div>
+		</main>
+		<footer>
+			<div class="container center-align">
+				<small>© <script>document.write(new Date().getFullYear())</script> Theodora Cvetković</small>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="./js/vue.global.prod.js"></script>
+		<script type="text/javascript" src="./js/vue-router.global.js"></script>
+		<script type="text/javascript" src="./js/axios.min.js"></script>
+		<script type="text/javascript" src="./js/markdown-it-container.min.js"></script>
+		<script type="text/javascript" src="./js/markdown-it.min.js"></script>
+		<script type="text/javascript" src="./js/materialize.min.js"></script>
+		<script type="text/javascript">
+			let scripts = ['./js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/page-not-found.vue.js', './js/app.js'];   
+			for (i=0; i < scripts.length; i++){
+				 let element = document.createElement('script');
+				 element.async = false;
+;				 element.src = scripts[i]+"?v=" + Math.round(new Date().getTime() / 1000);
+				 document.getElementsByTagName('body')[0].appendChild(element);
+			}
+		</script>
+	</body>
+</html>
