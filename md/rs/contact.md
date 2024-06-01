@@ -2,7 +2,7 @@
 
 ::: card-panel
 
-Hajde da se javimo. Pozovi me ili mi pošalji poruku.
+Pozovi me ili mi pošalji poruku.
 
 %%% place %%% Belgrade, Serbia
 

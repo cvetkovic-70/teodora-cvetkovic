@@ -39,7 +39,6 @@ const app = Vue.createApp({
 		return {
 		    isLoading: 0,
 			language: 'en',
-			repo: 'https://cvetkovic-70.github.io/teodora-cvetkovic',
 		}
 	},
 	created() {

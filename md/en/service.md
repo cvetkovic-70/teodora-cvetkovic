@@ -1,3 +1,3 @@
 # Service
 
-![test](/teodora-cvetkovic/images/test-bild.png)
+![test](images/test-bild.png)

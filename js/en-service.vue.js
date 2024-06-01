@@ -10,7 +10,7 @@ var serviceComponent = {
 	created() {	
 		this.$root.showLoader();	
 	
-		axios.get(this.$root.repo + '/md/en/service.md')
+		axios.get('/md/en/service.md')
 		.then((response) => {
 			this.$root.hideLoader();
 			this.html = markdown.render(response.data);

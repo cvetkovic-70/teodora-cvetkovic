@@ -10,7 +10,7 @@ var aboutMeComponentRs = {
 	created() {	
 		this.$root.showLoader();	
 	
-		axios.get(this.$root.repo + '/md/rs/about-me.md')
+		axios.get('/md/rs/about-me.md')
 		.then((response) => {
 			this.$root.hideLoader();
 			this.html = markdown.render(response.data);
