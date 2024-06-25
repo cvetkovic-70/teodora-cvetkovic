@@ -18,10 +18,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
-	background-color: #222;
-	color: white;
-	height: 70px;
 	width: 100%;
+}
+
+header > div.navbar-fixed {
+	background-color: #222;
+	min-height: 50px;
+	color: white;
+}
+
+header > div.navbar-fixed  > nav {
+	background-color: #222;
+}
+
+header > div.navbar-fixed  > nav ul.x-burger {
+	padding: 0;
+	margin: 0;
 }
 
 main {
@@ -35,14 +47,8 @@ footer {
 
 i.x-menu {
     color: white;
-    background-color: #222;	
 }
 
-div.x-fixed-action-btn {
-	top: 8px;
-	padding-top: 0;
-	bottom: inherit;
-}
 img[src*="#x-image-in-circle"] {
 	border-radius: 50%;
 	max-width: 50%;
@@ -69,3 +75,4 @@ div.x-sidenav-close > a > span.material-icons {
 	color: black;
 	padding: 5px;
 }
+

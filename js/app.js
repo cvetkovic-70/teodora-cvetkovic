@@ -73,6 +73,7 @@ const app = Vue.createApp({
 	},	
 });
 
+app.component('navigation', navigationComponent);
 app.use(router);
 
 app.mount('#app');

@@ -15,51 +15,48 @@
 		<link type="text/css" rel="stylesheet" href="./css/flag-icons.min.css" />
 		<link type="text/css" rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body>
+	<body id="app">
 		<header>
-			<div class="container center-align"></div>
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper">
+						<ul class="left hide-on-small-only">
+							<navigation v-bind:language="language"></navigation>
+							<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
+							<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>							
+						</ul>
+						<ul class="left hide-on-med-and-up x-burger">
+							<li>
+								<a href="#" data-target="slide-out" class="sidenav-trigger">
+									<i class="material-icons x-menu">menu</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</header>
 		<main>
-			<div id="app">
-				<div class="container" v-bind:lang="language">
-					<div class="progress" v-if="isLoading">
-						  <div class="indeterminate"></div>
-					</div>
-					
-					<div class="fixed-action-btn x-fixed-action-btn">
-						<a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn-large btn-floating">
-							<i class="material-icons x-menu">menu</i>
-						</a>
-					</div>
-					
-					<ul id="slide-out" class="sidenav">
-						<li>
-							<div class="x-sidenav-close">
-								<a class="sidenav-close" href="javascript:void(0);">
-									<span class="material-icons">close</span>
-								</a>
-							</div>
-						</li>
-						<li><div class="divider"></div></li>
-						<template v-if="language == 'en'">
-							<li><router-link to="/en/home">Home</router-link></li>
-							<li><router-link to="/en/about-me">About Me</router-link></li>
-							<li><router-link to="/en/service">Service</router-link></li>
-							<li><router-link to="/en/contact">Contact</router-link></li>
-						</template>
-						<template v-else>
-							<li><router-link to="/rs/home">Home</router-link></li>
-							<li><router-link to="/rs/about-me">O meni</router-link></li>
-							<li><router-link to="/rs/service">Usluge</router-link></li>
-							<li><router-link to="/rs/contact">Kontakt</router-link></li>				
-						</template>
-						<li><div class="divider"></div></li>
-						<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
-						<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>
-					</ul>
-					
-					<router-view></router-view>
-				</div>	
+			<div class="container" v-bind:lang="language">
+				<div class="progress" v-if="isLoading">
+					  <div class="indeterminate"></div>
+				</div>
+				<ul id="slide-out" class="sidenav">
+					<li>
+						<div class="x-sidenav-close">
+							<a class="sidenav-close" href="javascript:void(0);">
+								<span class="material-icons">close</span>
+							</a>
+						</div>
+					</li>
+					<li><div class="divider"></div></li>
+					<navigation v-bind:language="language"></navigation>
+					<li><div class="divider"></div></li>
+					<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
+					<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>
+				</ul>
+				
+				<router-view></router-view>
 			</div>
 		</main>
 		<footer>
@@ -67,7 +64,6 @@
 				<small>© <script>document.write(new Date().getFullYear())</script> Teodora Cvetković</small>
 			</div>
 		</footer>
-
 		<script type="text/javascript" src="./js/vue.global.prod.js"></script>
 		<script type="text/javascript" src="./js/vue-router.global.js"></script>
 		<script type="text/javascript" src="./js/axios.min.js"></script>
@@ -75,7 +71,7 @@
 		<script type="text/javascript" src="./js/markdown-it.min.js"></script>
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
 		<script type="text/javascript">
-			let scripts = ['./js/config.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/page-not-found.vue.js', './js/app.js'];   
+			let scripts = ['./js/config.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/page-not-found.vue.js', './js/navigation.vue.js', './js/app.js'];   
 			for (i=0; i < scripts.length; i++){
 				 let element = document.createElement('script');
 				 element.async = false;
