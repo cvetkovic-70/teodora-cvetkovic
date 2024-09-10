@@ -27,7 +27,7 @@ router.afterEach((to, from) => {
 });
 
 const markdown = markdownit({
-  html: false,
+  html: true,
   linkify: true,
   typographer: false
 }).use(window.markdownitContainer, 'center-align')

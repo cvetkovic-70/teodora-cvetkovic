@@ -2,13 +2,11 @@
 
 ::: card-panel
 
-Pozovi me ili mi pošalji poruku.
+Hajde da stupimo u kontakt. Možete mi poslati poruku da zakažete besplatnu sesiju.
 
-%%% place %%% Belgrade, Serbia
+%%% place %%% Niš, Serbia
 
-%%% phone %%% +38 123 123 123
-
-%%% mail %%% theodora.cvetkovic@x.y
+%%% mail %%% <a id="mail" href="bWFpbHRvOnBzeWNvdW5zdWx0QGdtYWlsLmNvbQ==">E-Mail</a>
 
 %%% psychology %%% Psiholog
 

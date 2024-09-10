@@ -2,13 +2,11 @@
 
 ::: card-panel
 
-Let's get in touch. Call me or send me a message.
+Let's get in touch. You can send me a message to schedule a free session.
 
-%%% place %%% Belgrade, Serbia
+%%% place %%% Niš, Serbia
 
-%%% phone %%% +38 123 123 123
-
-%%% mail %%% theodora.cvetkovic@x.y
+%%% mail %%% <a id="mail" href="bWFpbHRvOnBzeWNvdW5zdWx0QGdtYWlsLmNvbQ==">E-Mail</a>
 
 %%% psychology %%% Psychologist
 
