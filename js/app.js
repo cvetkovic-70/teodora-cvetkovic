@@ -68,14 +68,13 @@ const app = Vue.createApp({
 			}				
 		},
 		render(html) {
-			return html.replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>')
+			return html.replaceAll(/%%%\sfacebook\s%%%/g, facebook).replaceAll(/%%%\sinstagram\s%%%/g, instagram).replaceAll(/%%%\slinkedin\s%%%/g, linkedin).replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>')
 		},
 	},	
 });
 
 app.component('navigation', navigationComponent);
 app.use(router);
-
 app.mount('#app');
 
 

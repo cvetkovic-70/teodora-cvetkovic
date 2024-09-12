@@ -2,12 +2,14 @@
 
 ::: card-panel
 
-Hajde da stupimo u kontakt. Možete mi poslati poruku da zakažete besplatnu sesiju.
+Hajde da stupimo u kontakt. Možete mi poslati poruku da zakažete **besplatnu sesiju**.
 
-%%% place %%% Niš, Serbia
+%%% mail %%% psycounsult@gmail.com
 
-%%% mail %%% <a id="mail" href="bWFpbHRvOnBzeWNvdW5zdWx0QGdtYWlsLmNvbQ==">E-Mail</a>
+[%%% facebook %%% Facebook](https://www.facebook.com/people/Counseling-and-mental-health-PSY/61564066372532/)
 
-%%% psychology %%% Psiholog
+[%%% instagram %%% Instagram](https://www.instagram.com/psy.counseling.mental.health/)
+
+[%%% linkedin %%% LinkedIn](https://www.linkedin.com/in/teodora-counseling-28393a328)
 
 :::

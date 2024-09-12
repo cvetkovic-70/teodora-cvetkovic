@@ -29,13 +29,7 @@ var contactComponent = {
 			
 	},
 	updated() {
-		let obj = document.getElementById("mail");
-		if(typeof obj !== "undefined") {
-			obj.addEventListener("click", function(e) {
-				e.preventDefault()
-				window.location.href = atob(e.target.href.replace(appConfig.base + "/", ""));
-			});
-		}
+
 	},
 	methods: {
 		

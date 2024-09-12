@@ -2,12 +2,14 @@
 
 ::: card-panel
 
-Let's get in touch. You can send me a message to schedule a free session.
+Let's get in touch. You can send me a message to schedule a **free session**.
 
-%%% place %%% Niš, Serbia
+%%% mail %%% psycounsult@gmail.com
 
-%%% mail %%% <a id="mail" href="bWFpbHRvOnBzeWNvdW5zdWx0QGdtYWlsLmNvbQ==">E-Mail</a>
+[%%% facebook %%% Facebook](https://www.facebook.com/people/Counseling-and-mental-health-PSY/61564066372532/)
 
-%%% psychology %%% Psychologist
+[%%% instagram %%% Instagram](https://www.instagram.com/psy.counseling.mental.health/)
+
+[%%% linkedin %%% LinkedIn](https://www.linkedin.com/in/teodora-counseling-28393a328)
 
 :::
