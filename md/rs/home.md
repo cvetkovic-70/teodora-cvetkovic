@@ -1,10 +1,9 @@
 ::: center-align
-# Teodora Cvetković
+# Master klinički psiholog
 
-## Master klinički psiholog
+# Teodora Cvetković
 
 ![Teodora Cvetkovic](images/teodora.jpg#x-image-in-circle)
 
-**psihodinamskog usmerenja koji pruža savetodavne usluge prema jedinstvenim potrebama svakog klijenta**
-
+### Usluge psihološkog savetovanja iz ugla psihodinamske psihoterapije usklađene prema jedinstvenim potrebama svakog klijenta
 :::

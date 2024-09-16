@@ -2,7 +2,7 @@
 
 ::: card-panel
 
-Hajde da stupimo u kontakt. Možete mi poslati poruku da zakažete **besplatnu sesiju**.
+Zakažite Vašu prvu **besplatnu sesiju** mejlom.
 
 %%% mail %%% psycounsult@gmail.com
 
