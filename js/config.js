@@ -8,7 +8,7 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
 	}
 } else {
 	var appConfig = {
-		'base': 'https://teodora-counseling.com',
+		'base': 'https://www.teodora-counseling.com',
 	}
 }
 
