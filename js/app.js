@@ -70,6 +70,11 @@ const app = Vue.createApp({
 		render(html) {
 			return html.replaceAll(/%%%\sfacebook\s%%%/g, facebook).replaceAll(/%%%\sinstagram\s%%%/g, instagram).replaceAll(/%%%\slinkedin\s%%%/g, linkedin).replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>')
 		},
+		enablePlugin () {
+		  bootstrap().then((gtag) => {
+			// ok
+		  })
+		},		
 	},	
 });
 
@@ -78,6 +83,7 @@ app.component('navigation', navigationComponent);
 app.use(router);
 
 app.use(VueGtag, {
+	bootstrap: false,
 	config: { 
 		id: "G-S0TQG2L8SS",
 		params: {
