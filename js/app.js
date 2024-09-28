@@ -36,11 +36,7 @@ const markdown = markdownit({
 let showHint = true;
 let gtagCookie = getCookie("gtag"); 
 if(gtagCookie != null) {
-	if(gtagCookie == "true") {
-		showHint = false;
-	} else if(gtagCookie == "false") {
-		showHint = false;
-	}
+	showHint = false;
 }
 
 const app = Vue.createApp({
