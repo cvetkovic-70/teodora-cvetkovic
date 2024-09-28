@@ -33,12 +33,10 @@ const markdown = markdownit({
 }).use(window.markdownitContainer, 'center-align')
 .use(window.markdownitContainer, 'card-panel');
 
-let gtagEnabled = false;
 let showHint = true;
 let gtagCookie = getCookie("gtag"); 
 if(gtagCookie != null) {
 	if(gtagCookie == "true") {
-		gtagEnabled = true;
 		showHint = false;
 	} else if(gtagCookie == "false") {
 		showHint = false;
@@ -95,7 +93,6 @@ app.use(VueGtag, {
 		  anonymize_ip: true
 		},
 	},
-	enabled: gtagEnabled,
 }, router);
 
 app.mount('#app');
