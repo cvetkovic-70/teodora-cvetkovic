@@ -33,18 +33,11 @@ const markdown = markdownit({
 }).use(window.markdownitContainer, 'center-align')
 .use(window.markdownitContainer, 'card-panel');
 
-let showHint = true;
-let gtagCookie = getCookie("gtag"); 
-if(gtagCookie != null) {
-	showHint = false;
-}
-
 const app = Vue.createApp({
 	data() { 
 		return {
 		    isLoading: 0,
 			language: 'en',
-			showTrackingInfo: showHint,
 		}
 	},
 	created() {

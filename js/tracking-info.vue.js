@@ -11,17 +11,19 @@ var trackingInfoComponent = {
 			</div>
 		</div>
 	`,
-	props: ['visibility'],
 	data() { 
 		return {
-			show: false,
 		}
 	},
 	created() {	
-		this.show = this.visibility;
 	},
 	mounted() {
-		if(this.show) {
+		let showHint = true;
+		let gtagCookie = getCookie("gtag"); 
+		if(gtagCookie != null) {
+			showHint = false;
+		}		
+		if(showHint) {
 			var elem = document.getElementById('x-tracking-info');
 			var instance = M.Modal.init(elem, {});
 			instance.open();			
