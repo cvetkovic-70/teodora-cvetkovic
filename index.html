@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 		<meta name="description" content="Teodora Cvetkovic Psychologist" />
-		<meta name="keywords" content="Psychologist, Therapist"/>
+		<meta name="keywords" content="Psychologist, Therapist, Consuler, Advicer, Online"/>
 		<meta name="pragma" content="no-cache" />
 		<meta name="cache-control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0, proxy-revalidate" />
 		<meta name="robots" content="index, follow"/>
@@ -17,11 +17,23 @@
 		<meta name="google-site-verification" content="_uMZA197zKAdRGizTIeUIsGKzL11mPL9-fkwAXC8jB8" />
 		<script type="application/ld+json">
 			{
-			  "@context": "http://schema.org/",
-			  "@type": "Person",
-			  "name": "Teodora Cvetković",
-			  "jobTitle": "Psychologist",
-			  "url": "https://cvetkovic-70.github.io/teodora-cvetkovic/"
+				"@context": "http://schema.org/",
+				"@type": "Person",
+				"name": "Teodora Cvetković",
+				"gender": "female",
+				"image": "https://teodora-counseling.com/images/teodora.jpg",
+				"jobTitle": "Psychologist",
+				"url": "https://teodora-counseling.com",
+				"alumniOf": [
+					{
+						"@type": "Organization",
+						"name": "University of Niš"
+					},
+					{
+						"@type": "Organization",
+						"name": "International Psychoanalytic University Berlin"
+					}
+				]			  
 			}		
 		</script>
 	</head>
@@ -74,6 +86,7 @@
 				© <script>document.write(new Date().getFullYear())</script> Teodora Cvetković
 			</div>
 		</footer>
+		<tracking-info v-bind:visibility="showTrackingInfo"></tracking-info>
 
 		<script type="text/javascript" src="./js/vue.global.prod.js"></script>
 		<script type="text/javascript" src="./js/vue-router.global.js"></script>
@@ -82,8 +95,9 @@
 		<script type="text/javascript" src="./js/markdown-it-container.min.js"></script>
 		<script type="text/javascript" src="./js/markdown-it.min.js"></script>
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
 		<script type="text/javascript">
-			let scripts = ['./js/config.js', './js/icons.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/page-not-found.vue.js', './js/navigation.vue.js', './js/app.js'];   
+			let scripts = ['./js/config.js', './js/icons.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/page-not-found.vue.js', './js/navigation.vue.js', './js/tracking-info.vue.js', './js/app.js'];   
 			for (i=0; i < scripts.length; i++){
 				 let element = document.createElement('script');
 				 element.async = false;

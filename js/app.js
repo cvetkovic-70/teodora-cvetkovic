@@ -33,12 +33,24 @@ const markdown = markdownit({
 }).use(window.markdownitContainer, 'center-align')
 .use(window.markdownitContainer, 'card-panel');
 
+let gtagEnabled = false;
+let showHint = true;
+let gtagCookie = getCookie("gtag"); 
+if(gtagCookie != null) {
+	if(gtagCookie == "true") {
+		gtagEnabled = true;
+		showHint = false;
+	} else if(gtagCookie == "false") {
+		showHint = false;
+	}
+}
 
 const app = Vue.createApp({
 	data() { 
 		return {
 		    isLoading: 0,
 			language: 'en',
+			showTrackingInfo: showHint,
 		}
 	},
 	created() {
@@ -46,9 +58,7 @@ const app = Vue.createApp({
 	},
 	mounted() {
 		var elems = document.querySelectorAll('.sidenav');
-		var instances = M.Sidenav.init(elems, {
-		  // specify options here
-		});	
+		var instances = M.Sidenav.init(elems, {});		
 	},
 	methods: {
 	    showLoader() {
@@ -68,28 +78,24 @@ const app = Vue.createApp({
 			}				
 		},
 		render(html) {
-			return html.replaceAll(/%%%\sfacebook\s%%%/g, facebook).replaceAll(/%%%\sinstagram\s%%%/g, instagram).replaceAll(/%%%\slinkedin\s%%%/g, linkedin).replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>')
+			return html.replaceAll(/%%%\sfacebook\s%%%/g, facebook).replaceAll(/%%%\sinstagram\s%%%/g, instagram).replaceAll(/%%%\slinkedin\s%%%/g, linkedin).replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons">$1</i>');
 		},
-		enablePlugin () {
-		  bootstrap().then((gtag) => {
-			// ok
-		  })
-		},		
 	},	
 });
 
 app.component('navigation', navigationComponent);
+app.component('tracking-info', trackingInfoComponent);
 
 app.use(router);
 
 app.use(VueGtag, {
-	bootstrap: false,
 	config: { 
 		id: "G-S0TQG2L8SS",
 		params: {
 		  anonymize_ip: true
-		}
-	}
+		},
+	},
+	enabled: gtagEnabled,
 }, router);
 
 app.mount('#app');
