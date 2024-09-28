@@ -91,8 +91,8 @@ app.use(VueGtag, {
 		id: "G-S0TQG2L8SS",
 		params: {
 		  anonymize_ip: true
-		},
-	},
+		}
+	}
 }, router);
 
 app.mount('#app');
