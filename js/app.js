@@ -77,7 +77,7 @@ app.use(router);
 
 app.use(VueGtag, {
 	config: { 
-		id: "G-S0TQG2L8SS",
+		id: "GT-5TGLMH3K",
 		params: {
 		  anonymize_ip: true
 		}
