@@ -71,17 +71,7 @@ const app = Vue.createApp({
 });
 
 app.component('navigation', navigationComponent);
-app.component('tracking-info', trackingInfoComponent);
 
 app.use(router);
-
-app.use(VueGtag, {
-	config: { 
-		id: "G-S0TQG2L8SS",
-		params: {
-		  anonymize_ip: true
-		}
-	}
-}, router);
 
 app.mount('#app');

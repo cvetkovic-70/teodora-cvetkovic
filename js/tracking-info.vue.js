@@ -34,11 +34,9 @@ var trackingInfoComponent = {
 	},
 	methods: {
 		agree() {
-			this.$gtag.optIn();
 			setCookie("gtag", "true", 9999);
 		},
 		disagree() {
-			this.$gtag.optOut();
 			setCookie("gtag", "false", 9999);
 		}
 	},	
