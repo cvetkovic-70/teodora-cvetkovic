@@ -36,6 +36,17 @@ header > div.navbar-fixed  > nav ul.x-burger {
 	margin: 0;
 }
 
+ul.x-desktop-navigation {
+	float: none !important;
+	white-space:nowrap;
+	overflow-x: auto;
+}
+
+ul.x-desktop-navigation > li {
+	float: none !important;
+	display: inline-block !important;
+}
+
 main {
 	flex: 1 0 auto;
 }

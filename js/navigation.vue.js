@@ -4,12 +4,16 @@ var navigationComponent = {
 			<li><router-link to="/en/home">Home</router-link></li>
 			<li><router-link to="/en/about-me">About Me</router-link></li>
 			<li><router-link to="/en/service">Service</router-link></li>
+			<li><router-link to="/en/news">News</router-link></li>
+			<li><router-link to="/en/blog">Blog</router-link></li>
 			<li><router-link to="/en/contact">Contact</router-link></li>
 		</template>
 		<template v-else>
 			<li><router-link to="/rs/home">Home</router-link></li>
 			<li><router-link to="/rs/about-me">O meni</router-link></li>
 			<li><router-link to="/rs/service">Usluge</router-link></li>
+			<li><router-link to="/rs/news">Novosti</router-link></li>
+			<li><router-link to="/rs/blog">Blog</router-link></li>
 			<li><router-link to="/rs/contact">Kontakt</router-link></li>				
 		</template>
 	`,
