@@ -43,7 +43,7 @@
 				<nav>
 					<div class="nav-wrapper">
 						<ul class="x-desktop-navigation left hide-on-small-only">
-							<navigation v-bind:language="language"></navigation>
+							<x-navigation v-bind:language="language"></x-navigation>
 							<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
 							<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>							
 						</ul>
@@ -72,7 +72,7 @@
 						</div>
 					</li>
 					<li><div class="divider"></div></li>
-					<navigation v-bind:language="language"></navigation>
+					<x-navigation v-bind:language="language"></x-navigation>
 					<li><div class="divider"></div></li>
 					<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
 					<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>
@@ -83,7 +83,7 @@
 		</main>
 		<footer>
 			<div class="container center-align">
-				© <script>document.write(new Date().getFullYear())</script> Teodora Cvetković
+				<x-footer></x-footer>
 			</div>
 		</footer>
 
@@ -95,7 +95,7 @@
 		<script type="text/javascript" src="./js/materialize.min.js"></script>
 		<script type="text/javascript" src="./js/scripts.js"></script>
 		<script type="text/javascript">
-			let scripts = ['./js/config.js', './js/icons.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/en-news.vue.js', './js/en-blog.vue.js','./js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/rs-news.vue.js', './js/rs-blog.vue.js', './js/page-not-found.vue.js', './js/navigation.vue.js', './js/app.js'];   
+			let scripts = ['./js/config.js', './js/icons.js', './js/en-home.vue.js', './js/en-service.vue.js', './js/en-about-me.vue.js', './js/en-contact.vue.js', './js/en-news.vue.js', './js/en-blog.vue.js','./js/rs-home.vue.js', './js/rs-service.vue.js', './js/rs-about-me.vue.js', './js/rs-contact.vue.js', './js/rs-news.vue.js', './js/rs-blog.vue.js', './js/page-not-found.vue.js', './js/navigation.vue.js', './js/footer.vue.js', './js/app.js'];   
 			for (i=0; i < scripts.length; i++){
 				 let element = document.createElement('script');
 				 element.async = false;

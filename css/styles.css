@@ -84,6 +84,13 @@ footer {
 	width: 100%;
 }
 
+div.x-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;	
+}
+
 i.x-menu {
     color: white;
 }

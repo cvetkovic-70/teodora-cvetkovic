@@ -74,7 +74,9 @@ const app = Vue.createApp({
 	},	
 });
 
-app.component('navigation', navigationComponent);
+app.component('x-navigation', navigationComponent);
+
+app.component('x-footer', footerComponent);
 
 app.use(router);
 
