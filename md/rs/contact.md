@@ -2,7 +2,7 @@
 
 ::: card-panel
 
-Zakažite Vašu prvu **besplatnu sesiju** mejlom.
+Zakažite Vašu prvu sesiju mejlom.
 
 %%% mail %%% psycounsult@gmail.com
 
