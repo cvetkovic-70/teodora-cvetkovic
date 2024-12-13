@@ -2,7 +2,7 @@
 
 ::: card-panel
 
-Let's get in touch. You can send me a message to schedule a **free session**.
+Let's get in touch. You can send me a message to schedule a session.
 
 %%% mail %%% psycounsult@gmail.com
 
