@@ -127,10 +127,20 @@ div.x-sidenav-close > a > span.material-icons {
 	padding: 5px;
 }
 
+.sidenav li > a > .material-icons {
+	color: black !important;
+	margin-right: 0 !important;
+}
+
 textarea#x-message {
 	width: 100%;
 	height: 75px;
 	resize: none;
+}
+
+.x-icon {
+	vertical-align: middle;
+	display: inline-block !important;
 }
 
 @media screen and (max-width: 480px) {

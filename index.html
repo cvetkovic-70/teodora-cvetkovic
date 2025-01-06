@@ -40,12 +40,11 @@
 	<body id="app">
 		<header>
 			<div class="navbar-fixed">
+				<!-- desktop navigation start -->
 				<nav>
 					<div class="nav-wrapper">
 						<ul class="x-desktop-navigation left hide-on-small-only">
-							<x-navigation v-bind:language="language"></x-navigation>
-							<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
-							<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>							
+							<x-navigation v-bind:language="language"></x-navigation>						
 						</ul>
 						<ul class="left hide-on-med-and-up show-on-small x-burger">
 							<li>
@@ -56,6 +55,7 @@
 						</ul>
 					</div>
 				</nav>
+				<!-- desktop navigation end -->
 			</div>
 		</header>
 		<main>
@@ -63,6 +63,7 @@
 				<div class="progress" v-if="isLoading">
 					  <div class="indeterminate"></div>
 				</div>
+				<!-- mobile navigation start -->
 				<ul id="slide-out" class="sidenav">
 					<li>
 						<div class="x-sidenav-close">
@@ -73,11 +74,8 @@
 					</li>
 					<li><div class="divider"></div></li>
 					<x-navigation v-bind:language="language"></x-navigation>
-					<li><div class="divider"></div></li>
-					<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
-					<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>
 				</ul>
-				
+				<!-- mobile navigation end -->
 				<router-view></router-view>
 			</div>
 		</main>

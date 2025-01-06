@@ -2,6 +2,6 @@
 
 ::: card-panel
 
-### Coming soon.
+### Coming soon
 
 :::
