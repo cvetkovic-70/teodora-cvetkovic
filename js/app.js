@@ -20,6 +20,14 @@ const router = VueRouter.createRouter({
 	  routes,
 });
 
+router.beforeEach((to, from) => {
+	if(to.path == "/rs/") {
+		router.push({ path: from.path.replace("/en/", "/rs/") });
+	} else if(to.path == "/en/") {
+		router.push({ path: from.path.replace("/rs/", "/en/") });
+	}
+});
+
 router.afterEach((to, from) => {
   var elems = document.querySelectorAll('.sidenav');
   if(elems[0] !== "undefined") {

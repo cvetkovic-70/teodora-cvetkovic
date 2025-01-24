@@ -53,8 +53,8 @@ var navigationComponent = {
 			</a>
 		</li>
 		<li class="hide-on-med-and-up"><div class="divider"></div></li>
-		<li><router-link to="/rs/home"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
-		<li><router-link to="/en/home"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>		
+		<li><router-link to="/rs/"><span class="fi fi-rs"></span>&nbsp;Srpski</router-link></li>
+		<li><router-link to="/en/"><span class="fi fi-gb"></span>&nbsp;English</router-link></li>		
 	`,
 	props: ['language'],
 	data() { 
