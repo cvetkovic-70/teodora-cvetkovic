@@ -96,8 +96,7 @@ i.x-menu {
 }
 
 .card-panel.card-panel {
-	text-align: justify;
-	text-justify: inter-word;
+	text-align: left;
 }
 
 img[src*="#x-image-in-circle"] {
