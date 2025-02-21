@@ -96,10 +96,6 @@ i.x-menu {
     color: white;
 }
 
-.card-panel.card-panel {
-	text-align: left;
-}
-
 img[src*="#x-image-in-circle"] {
 	border-radius: 50%;
 	max-width: 40%;
