@@ -79,6 +79,9 @@ const app = Vue.createApp({
 		render(html) {
 			return html.replaceAll(/%%%\sfacebook\s%%%/g, facebook).replaceAll(/%%%\sinstagram\s%%%/g, instagram).replaceAll(/%%%\slinkedin\s%%%/g, linkedin).replaceAll(/%%%\s([\w\s]*)\s%%%/g, '<i class="small material-icons x-icon">$1</i>');
 		},
+		scrollup() {
+			window.scrollTo(0,0);
+		},
 	},	
 });
 

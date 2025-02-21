@@ -6,6 +6,7 @@ html,body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;	
+	scroll-behavior: smooth;
 }
 
 body {
@@ -141,6 +142,25 @@ textarea#x-message {
 .x-icon {
 	vertical-align: middle;
 	display: inline-block !important;
+}
+
+a.x-button-top {
+	position: fixed;
+	max-width: 45px;
+    bottom: 25px;
+    right: 30px;
+	background: #000;
+	color: #fff;
+	opacity: 0.9;
+	display:block;
+	padding: 8px 10px;
+	border-radius: 25px;
+	z-index: 255;
+	cursor: pointer;
+}
+
+a.x-button-top:hover {
+	background: #222;
 }
 
 @media screen and (max-width: 480px) {
