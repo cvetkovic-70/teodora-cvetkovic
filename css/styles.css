@@ -158,6 +158,11 @@ a.x-button-top:hover {
 	background: #222;
 }
 
+.x-row-panel {
+	display: flex;
+    justify-content: space-evenly;	
+}
+
 @media screen and (max-width: 480px) {
 	h1 {
 		font-size: 22px;
@@ -181,5 +186,9 @@ a.x-button-top:hover {
 
 	h6 {
 		font-size: 14px;
+	}
+	
+	.x-row-panel {
+		display: block;
 	}
 }

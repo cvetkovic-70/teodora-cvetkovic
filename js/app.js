@@ -43,6 +43,7 @@ const markdown = markdownit({
   linkify: true,
   typographer: false
 }).use(window.markdownitContainer, 'center-align')
+.use(window.markdownitContainer, 'x-row-panel')
 .use(window.markdownitContainer, 'card-panel');
 
 const app = Vue.createApp({
