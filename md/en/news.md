@@ -1,6 +1,28 @@
 # News
 
 ::: card-panel
+### Join the Psychotherapy Intervision Group at the [International Psychoanalytic University of Berlin](https://www.ipu-berlin.de/en/)
+
+Starting in October 2025, the [International Psychoanalytic University in Berlin](https://www.ipu-berlin.de/en/) hosts a psychotherapy intervision group bringing together [ALUMNI members](https://connect.ipu-berlin.de/international-alumni-program/?lang=us), practicing psychotherapists, psychotherapy trainees, and psychology students from diverse theoretical and cultural backgrounds.
+The group provides a structured yet open clinical space for working with therapeutic
+cases and reflecting on important questions arising in the therapeutic process. Group
+work is centered on reflective dialogue across different psychoanalytic
+orientations, supporting therapists in deepening clinical sensitivity and knowledge,
+strengthening professional presence, and developing a more grounded
+therapeutic stance within a stable and trusted group setting. <br /> <br />
+If you are an [ALUMNI student](https://connect.ipu-berlin.de/international-alumni-program/?lang=us) or psychotherapist and would like to be part of a professional community dedicated to ongoing learning, reflection, and the exchange of
+therapeutic practice, you are welcome to contact the group coordinator:<br /> <br />
+**Teodora Cvetković**<br />
+[teodora.cvetkovic@ipu-berlin.de](mailto:teodora.cvetkovic@ipu-berlin.de)
+
+<div style="text-align: center;">
+  <a href="images/eng_poster.png">
+    <img src="images/eng_poster.png" alt="INTERNACIONALNI ALUMNI PROGRAM" width="400" height="auto" style="display: block; margin: 0 auto;">
+  </a>
+</div>
+:::
+
+::: card-panel
 
 ### Upcoming Project: Human vs. Artificial Intelligence in Clinical Diagnostics
 
