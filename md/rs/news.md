@@ -2,6 +2,33 @@
 
 ::: card-panel
 
+### Postani deo edukativne psihoterapijske grupe na [Internacionalnom psihoanalitičkom univerzitetu u Berlinu](https://www.ipu-berlin.de/en/)
+
+Od oktobra 2025. godine, Internacionalni psihoanalitički univerzitet u Berlinu okuplja
+[ALUMNI studente](https://connect.ipu-berlin.de/international-alumni-program/?lang=us),
+psihoterapeute, edukante psihoterapije i studente psihologije iz celog sveta, u okviru
+internacionalne intervizijske grupe. <br />
+Oslanjajući se na znanja iz različitih psihoanalitičkih pravaca, članovi grupe zajednički
+rade na psihoanalitičkoj interpretaciji kliničkih slučajeva i dinamike terapijskog procesa.
+Kroz ovaj proces otvaraju se važna profesionalna pitanja, produbljuje razumevanje
+sopstvene prakse i jača profesionalna sigurnost, uz pripadnost zajednici zasnovanoj na
+poverenju, znanju i kontinuitetu. <br /> <br />
+Ukoliko si [ALUMNI student](https://connect.ipu-berlin.de/international-alumni-program/?lang=us) ili psihoterapeut i želiš da budeš deo stručne zajednice posvećene
+kontinuiranom učenju, refleksiji i razmeni terapeutske prakse, možeš se javiti
+koordinatoru grupe: <br /> <br />
+**Teodora Cvetković**<br />
+[teodora.cvetkovic@ipu-berlin.de](mailto:teodora.cvetkovic@ipu-berlin.de)
+
+<div style="text-align: center;">
+  <a href="images/srp_poster.png">
+    <img src="images/srp_poster.png" alt="INTERNACIONALNI ALUMNI PROGRAM" width="400" height="auto" style="display: block; margin: 0 auto;">
+  </a>
+</div>
+
+:::
+
+::: card-panel
+
 ### Predstojeći projekat: Čovek ili veštačka inteligencija u kliničkoj dijagnostici
 
 **Predstavljamo novu istraživačku inicijativu, koja se bavi jednim od najvažnijih pitanja savremene psihologije**:<br />
