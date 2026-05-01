@@ -6,45 +6,89 @@
 
 Working with clients to address issues such as anxiety, depression, lack of coping mechanisms for dealing with stress, in-depth trauma work, low self-esteem etc. As well working with clients on individual growth and development of potential.
 
+:::
+
+::: card-panel
+
 ### Couples Therapy
 
 Helping couples resolve conflicts, improve relationships, and strengthen emotional bonds.
+
+:::
+
+::: card-panel
 
 ### Family Therapy
 
 Assisting families in improving communication, strengthening family relationships, and resolving internal conflicts.
 
+:::
+
+::: card-panel
+
 ### Parenting Advice
 
 Providing advice and support to parents regarding parenting challenges, recommending upbringing methods that promote confidence, independence, and emotional intelligence in children, offering advice on child development, and providing guidance for coping with crisis situations such as divorce, family loss etc.
+
+:::
+
+::: card-panel
 
 ### Working with Children and Adolescents
 
 Supporting children and young people in dealing with emotional problems, learning and socialization difficulties, adolescent depression, school phobia, and more.
 
+:::
+
+::: card-panel
+
 ### Psychological Support for the LGBTQ+ Community
 
 Providing support to LGBTQ+ individuals in facing specific challenges, including identity issues, discrimination, self-acceptance, and mental health.
+
+:::
+
+::: card-panel
 
 ### Psychological Assistance for Survivors of Violence
 
 Supporting individuals who have survived violence (physical, emotional, sexual) in the recovery process.
 
+:::
+
+::: card-panel
+
 ### Psychological Counseling in Healthcare Settings
 
 Providing help to clients with chronic diseases to manage the emotional and psychological aspects of their conditions, providing support in coping with illnesses, rehabilitation, and accepting new life situations. 
+
+:::
+
+::: card-panel
 
 ### Crisis Interventions
 
 Providing support and intervention in cases of acute crises, such as the sudden loss of a loved one, natural disasters, traffic accidents, and more.
 
+:::
+
+::: card-panel
+
 ### Working with the Elderly
 
 Helping people adapt to changes that come with aging, such as the loss of a partner, physical changes, social isolation, and more.
 
+:::
+
+::: card-panel
+
 ### Psychological Assessment and Diagnostics
 
 Conducting psychological tests and assessments to diagnose various psychological disorders and challenges.
+
+:::
+
+::: card-panel
 
 ### Business Consulting
 

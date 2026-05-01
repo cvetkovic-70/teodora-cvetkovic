@@ -1,6 +1,6 @@
 var contactComponentRs = {
 	template: `	
-		<div v-html="html" />
+		<div class="x-contact-page" v-html="html" />
 		
 		<!-- todo
 		<div class="card-panel">

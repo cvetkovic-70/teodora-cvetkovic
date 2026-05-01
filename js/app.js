@@ -44,7 +44,11 @@ const markdown = markdownit({
   typographer: false
 }).use(window.markdownitContainer, 'center-align')
 .use(window.markdownitContainer, 'x-row-panel')
-.use(window.markdownitContainer, 'card-panel');
+.use(window.markdownitContainer, 'card-panel')
+.use(window.markdownitContainer, 'x-hero')
+.use(window.markdownitContainer, 'x-service-grid')
+.use(window.markdownitContainer, 'x-skills-grid')
+.use(window.markdownitContainer, 'x-contact-grid');
 
 const app = Vue.createApp({
 	data() { 

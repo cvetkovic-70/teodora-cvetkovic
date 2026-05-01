@@ -1,6 +1,6 @@
 var serviceComponentRs = {
 	template: `	
-		<div v-html="html" />
+		<div class="x-service-page" v-html="html" />
 	`,
 	data() { 
 		return {
